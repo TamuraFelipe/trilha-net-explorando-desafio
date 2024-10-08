@@ -21,7 +21,6 @@ namespace DesafioProjetoHospedagem.Models
             bool capacidade = qtdHospedes <= Suite.Capacidade;
             if (capacidade)
             {
-                Console.WriteLine("Capacidade suficiente");
                 Hospedes = hospedes;
             }
             else
@@ -41,7 +40,8 @@ namespace DesafioProjetoHospedagem.Models
         {
             // TODO: Retorna a quantidade de hóspedes (propriedade Hospedes)
             // *IMPLEMENTE AQUI*
-            return 0;
+            int qtdHospedesCadastrados = Hospedes.Count;
+            return qtdHospedesCadastrados;
         }
 
         public decimal CalcularValorDiaria()
